@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build",
+    "startTime": "2024-03-17T22:55:11.371Z",
+    "endTime": "2024-03-17T22:55:11.412Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "angular-playground:build:production",
+      "target": "build",
+      "projectName": "angular-playground",
+      "hash": "3376535429618139541",
+      "startTime": "2024-03-17T22:55:11.385Z",
+      "endTime": "2024-03-17T22:55:11.408Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    }
+  ]
+}

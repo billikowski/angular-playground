@@ -9,11 +9,13 @@
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
     "@angular/material": "^17.3.0",
+    "@angular/material-experimental": "^17.3.0",
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "prettier": "^3.2.5",
     "rxjs": "~7.8.0",
+    "sass": "^1.72.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3",
     "@angular-devkit/build-angular": "^17.3.0",
@@ -76,15 +78,15 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "7747343430594656293"
+        "hash": "4952801134423430142"
       },
       {
         "file": "package.json",
-        "hash": "13892129385251339766"
+        "hash": "5117800889424166418"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "14837570510023188652"
+        "hash": "927265283263252800"
       },
       {
         "file": "src/app/app.component.scss",
@@ -96,11 +98,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "453401479579550405"
+        "hash": "7625322914574323008"
       },
       {
         "file": "src/app/app.config.ts",
-        "hash": "10602185893902171963"
+        "hash": "13587070671430389819"
       },
       {
         "file": "src/app/app.routes.ts",
@@ -124,7 +126,7 @@
       },
       {
         "file": "src/styles.scss",
-        "hash": "17948848849236469070"
+        "hash": "11014280172838483919"
       },
       {
         "file": "tailwind.config.js",

@@ -1,7 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use '@angular/material-experimental' as matx;
+@use 'sass:map';
+
+@include mat.core;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+$palettes: (
+  'red': matx.$m3-red-palette,
+  'green': matx.$m3-green-palette,
+  'blue': matx.$m3-blue-palette,
+  'yellow': matx.$m3-yellow-palette,
+  'cyan': matx.$m3-cyan-palette,
+  'magenta': matx.$m3-magenta-palette,
+  'orange': matx.$m3-orange-palette,
+  'chartreuse': matx.$m3-chartreuse-palette,
+  'azure': matx.$m3-azure-palette,
+  'rose': matx.$m3-rose-palette,
+);
+$theme-map: ();
+
+@each $theme in ('dark', 'light') {
+  @each $color, $palette in $palettes {
+    $theme-name: 'm3-#{$color}-#{$theme}-theme';
+    $theme-map: map.merge(
+      $theme-map,
+      (
+        $theme-name:
+          matx.define-theme(
+            (
+              color: (
+                theme-type: $theme,
+                primary: $palette,
+              ),
+            )
+          ),
+      )
+    );
+  }
+}
+
+$m3-violet-dark-theme: matx.define-theme(
+  (
+    color: (
+      theme-type: dark,
+      primary: matx.$m3-violet-palette,
+    ),
+    density: (
+      scale: -1,
+    ),
+  )
+);
+
+$m3-violet-light-theme: matx.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: matx.$m3-violet-palette,
+    ),
+  )
+);
+
+@mixin themeable-styles($theme) {
+  .secondary {
+    @include mat.all-component-colors(
+      $m3-violet-dark-theme,
+      $color-variant: secondary
+    );
+  }
+  .tertiary {
+    @include mat.all-component-colors(
+      $m3-violet-dark-theme,
+      $color-variant: tertiary
+    );
+  }
+  .warn {
+    @include mat.all-component-colors(
+      $m3-violet-dark-theme,
+      $color-variant: error
+    );
+  }
+}

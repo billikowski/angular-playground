@@ -1,0 +1,11 @@
+[NX Daemon Server] - 2024-11-23T13:45:49.048Z - Started listening on: \\.\pipe\nx\C:\Users\danie\AppData\Local\Temp\8af311b5a73aabf996f3\d.sock
+[NX Daemon Server] - 2024-11-23T13:45:49.051Z - [WATCHER]: Subscribed to changes within: C:\Users\danie\angular-playground (native)
+[NX Daemon Server] - 2024-11-23T13:45:49.058Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T13:45:49.059Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T13:45:49.060Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T13:45:49.062Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T13:45:49.063Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T13:45:49.063Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-11-23T13:45:49.063Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T13:45:49.063Z - [WATCHER]: Stopping the watcher for C:\Users\danie\angular-playground (sources)
+[NX Daemon Server] - 2024-11-23T13:45:49.063Z - [WATCHER]: Stopping the watcher for C:\Users\danie\angular-playground (outputs)

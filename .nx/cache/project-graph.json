@@ -46,6 +46,24 @@
         "hash": "sha512-mC70mZK/liITM4VlGL6hmYPkVsZwAb+X3TxwodBl/g8p/sYijDhK/4QJHzmcHTxLYQQS6nS5CUcr9ARQFkGN2w=="
       }
     },
+    "npm:sass@1.71.1": {
+      "type": "npm",
+      "name": "npm:sass@1.71.1",
+      "data": {
+        "version": "1.71.1",
+        "packageName": "sass",
+        "hash": "sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg=="
+      }
+    },
+    "npm:sass": {
+      "type": "npm",
+      "name": "npm:sass",
+      "data": {
+        "version": "1.72.0",
+        "packageName": "sass",
+        "hash": "sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA=="
+      }
+    },
     "npm:@angular-devkit/build-webpack": {
       "type": "npm",
       "name": "npm:@angular-devkit/build-webpack",
@@ -95,9 +113,9 @@
       "type": "npm",
       "name": "npm:@angular/cdk",
       "data": {
-        "version": "17.3.0",
+        "version": "17.3.1",
         "packageName": "@angular/cdk",
-        "hash": "sha512-/RIEzP7D3wCGgk2FEvSWTvcKMa+4L7djMF6ZnOKqU6CiJLX3Ksr3+RXqXuiVkdVZBoRXEWRofS/DYEai+nIW8A=="
+        "hash": "sha512-pHSN+KlCmdo2u9jY7Yxsry/ZK+EcjOYGzdwxXxcKragMzm7etY3BJiTl4N+qZRuV6cJlMj2PRkij8ABi/HQdEA=="
       }
     },
     "npm:@angular/cli": {
@@ -221,9 +239,18 @@
       "type": "npm",
       "name": "npm:@angular/material",
       "data": {
-        "version": "17.3.0",
+        "version": "17.3.1",
         "packageName": "@angular/material",
-        "hash": "sha512-e9X/Gu4mVW9CZ83Hdlq2VUemPsoBbZcmsWKJ2FBl3E0v4puZK45OuUSx1VZl3Ct+CmVRlI6SJSWV1bFjRH8G3A=="
+        "hash": "sha512-Md1OnO0/sQvK5GkTQyE4v1DAaMswXt1TnjjY07KG7cICTrUN8lc0a2P9dMjlSFXIhxC7PTlNH6plSZ1uspbU8Q=="
+      }
+    },
+    "npm:@angular/material-experimental": {
+      "type": "npm",
+      "name": "npm:@angular/material-experimental",
+      "data": {
+        "version": "17.3.1",
+        "packageName": "@angular/material-experimental",
+        "hash": "sha512-AQfweJqy2vv9Xx//mt5+Rj4XSBkStTli6LcEg/J3D3IBJAX2p8iLvqv7InAyxnuxQKivgwtsNnz4gdugahsluQ=="
       }
     },
     "npm:@angular/platform-browser": {
@@ -8110,15 +8137,6 @@
         "hash": "sha512-LRneZZRXNgjzwG4bDQdOTSbze3fHm1EAKN/8bePxnlEZiBmkYEDggaHbuvHI9/hoqHbGfsEA7tWS9GhYHZBBsw=="
       }
     },
-    "npm:sass": {
-      "type": "npm",
-      "name": "npm:sass",
-      "data": {
-        "version": "1.71.1",
-        "packageName": "sass",
-        "hash": "sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg=="
-      }
-    },
     "npm:sass-loader": {
       "type": "npm",
       "name": "npm:sass-loader",
@@ -9411,7 +9429,7 @@
       },
       {
         "source": "npm:@angular-devkit/build-angular",
-        "target": "npm:sass",
+        "target": "npm:sass@1.71.1",
         "type": "static"
       },
       {
@@ -9492,6 +9510,23 @@
       {
         "source": "npm:@angular-devkit/build-angular",
         "target": "npm:esbuild",
+        "type": "static"
+      }
+    ],
+    "npm:sass@1.71.1": [
+      {
+        "source": "npm:sass@1.71.1",
+        "target": "npm:chokidar",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass@1.71.1",
+        "target": "npm:immutable",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass@1.71.1",
+        "target": "npm:source-map-js",
         "type": "static"
       }
     ],
@@ -10187,6 +10222,283 @@
       },
       {
         "source": "npm:@angular/material",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@angular/material-experimental": [
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/animations",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/animation",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/auto-init",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/banner",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/base",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/card",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/checkbox",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/chips",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/circular-progress",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/data-table",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/density",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/dialog",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/drawer",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/elevation",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/fab",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/feature-targeting",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/floating-label",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/form-field",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/icon-button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/image-list",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/layout-grid",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/line-ripple",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/linear-progress",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/list",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/menu-surface",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/notched-outline",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/radio",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/ripple",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/rtl",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/segmented-button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/select",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/shape",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/slider",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/snackbar",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/switch",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/tab",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/tab-bar",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/tab-indicator",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/tab-scroller",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/textfield",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/tooltip",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/top-app-bar",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/touch-target",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
+        "target": "npm:@material/typography",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material-experimental",
         "target": "npm:tslib",
         "type": "static"
       }
