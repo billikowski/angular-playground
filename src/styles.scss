@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @use '@angular/material' as mat;
-@use '@angular/material-experimental' as matx;
 @use 'sass:map';
 
 @include mat.core;
@@ -19,16 +18,16 @@ body {
 }
 
 $palettes: (
-  'red': matx.$m3-red-palette,
-  'green': matx.$m3-green-palette,
-  'blue': matx.$m3-blue-palette,
-  'yellow': matx.$m3-yellow-palette,
-  'cyan': matx.$m3-cyan-palette,
-  'magenta': matx.$m3-magenta-palette,
-  'orange': matx.$m3-orange-palette,
-  'chartreuse': matx.$m3-chartreuse-palette,
-  'azure': matx.$m3-azure-palette,
-  'rose': matx.$m3-rose-palette,
+  'red': mat.$red-palette,
+  'green': mat.$green-palette,
+  'blue': mat.$blue-palette,
+  'yellow': mat.$yellow-palette,
+  'cyan': mat.$cyan-palette,
+  'magenta': mat.$magenta-palette,
+  'orange': mat.$orange-palette,
+  'chartreuse': mat.$chartreuse-palette,
+  'azure': mat.$azure-palette,
+  'rose': mat.$rose-palette,
 );
 $theme-map: ();
 
@@ -39,7 +38,7 @@ $theme-map: ();
       $theme-map,
       (
         $theme-name:
-          matx.define-theme(
+          mat.define-theme(
             (
               color: (
                 theme-type: $theme,
@@ -52,11 +51,11 @@ $theme-map: ();
   }
 }
 
-$m3-violet-dark-theme: matx.define-theme(
+$m3-violet-dark-theme: mat.define-theme(
   (
     color: (
       theme-type: dark,
-      primary: matx.$m3-violet-palette,
+      primary: mat.$violet-palette,
     ),
     density: (
       scale: -1,
@@ -64,11 +63,11 @@ $m3-violet-dark-theme: matx.define-theme(
   )
 );
 
-$m3-violet-light-theme: matx.define-theme(
+$m3-violet-light-theme: mat.define-theme(
   (
     color: (
       theme-type: light,
-      primary: matx.$m3-violet-palette,
+      primary: mat.$violet-palette,
     ),
   )
 );
